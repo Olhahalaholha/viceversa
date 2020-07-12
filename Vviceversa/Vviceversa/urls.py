@@ -1,4 +1,4 @@
-"""viceversa URL Configuration
+"""Vviceversa URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -15,9 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
 
 urlpatterns = [
-    path('reverse/', views.reverse, name='reverse'),
-    path('', views.home),
+    path('admin/', admin.site.urls),
 ]
